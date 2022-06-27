@@ -1,0 +1,705 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<link rel="stylesheet" href="izipizi.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="bootstrap/icons/fonts/bootstrap-icons.css"> <!-- koneksi icon bootstrap offline -->
+    <title>IziPizi Detail Produk</title>
+	<style>
+		.dropdown-item:hover{background-color:gold;}
+	</style>
+  </head>
+  <body>
+    <div class="container-fluid" style="font-family:poppins">
+		<div class="row">
+			<div class="div-col-12">
+				<nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color:white;margin-top:24px;">
+					<a href="homepelanggan.html" class="navbar-brand" style="padding-left:140px;">
+						<img src="asset/logo.png" id="logo" width="120" height="120">
+					</a>
+					<button class="navbar-toggler" id="togel" type="button" data-toggle="collapse" data-target="#mt">
+						<span class="navbar-toggler-icon"></span><!-- buat icon toogle -->
+					</button>
+					<form action="#" class="form-group form-inline col-md-7 mt-3" style="margin-left:10px;">
+						<div class="input-group" style="width:100%;">
+							<input type="text" class="form-control font-weight-light shadow-none" placeholder="Cari produk, merk dan toko" style="padding:10px;border:1px solid;border-radius:10px;">							
+						<div class="btn text-light font-weight-bold" type="button" style="background-color:#0E0E0E;border:0px solid ;border-radius:10px;margin-left:10px;">
+							<i class="bi bi-search"></i>
+						</div>
+						</div>
+					</form>
+					
+					<div class="collapse navbar-collapse" id="mt">
+						<ul class="navbar-nav ml-2">
+							<li>
+								<a href="#" id="keranjang"><i class="bi bi-cart2" style="font-size:25px;color:#0E0E0E;;"></i></a><span class="badge" id="notip1" style="background-color:red;position:absolute;border-radius:10px;color:white;">0</span>
+							</li>
+							<li>
+								<a href="#" id="keranjang"><i class="bi bi-bell ml-5" style="font-size:25px;color:#0E0E0E;"></i></a><span class="badge" id="notip1" style="background-color:red;position:absolute;border-radius:10px;color:white;">0</span>
+							</li>
+							<li>
+								<a href="#" id="keranjang"><i class="bi bi-chat-dots ml-5" style="font-size:25px;color:#0E0E0E;"></i></a><span class="badge" id="notip1" style="background-color:red;position:absolute;border-radius:10px;color:white;">0</span>
+							</li>
+						</ul>
+					</div>
+				</nav>
+				<div class="row fixed-top" id="navis">
+					<div class="col-md-6" style="background-color:#0E0E0E;padding-left:140px;">
+						<span style="font-size:13.5px;"><a href="#" class="text-decoration-none mr-1" role="button" style="color:white;font-family:arial;">Download
+						&#124;</a></span>
+						<span style="color:white;font-size:12px;">Ikuti kami di<a href="#"><i class="bi bi-facebook ml-2 text-light"></i></a></span>
+						<span style="color:white;font-size:12px;"><a href="#"><i class="bi bi-instagram ml-2 text-light"></i></a></span>
+						<span style="color:white;font-size:12px;"><a href="#"><i class="bi bi-twitter ml-2 text-light"></i></a></span>
+					</div>
+					<div class="col-lg-6 text-right" style="background-color:#0E0E0E;padding-right:126px;color:white;">
+						<span style="color:white;font-size:12px;"><a href="daftarpenjual.html" class="text-decoration-none mr-2 tex-right" role="button" style="color:white;">Jual di IziPizi</a></span>
+						<div class="btn-group">
+							<button class="btn btn-sm dropdown-toggle shadow-none" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color:#0E0E0E;color:white;font-size:12px;">
+							<i class="bi bi-headset mr-1"></i>Bantuan 24/7
+							</button>
+							<div class="dropdown-menu">
+								<small><a href="#" class="dropdown-item">FAQ</a></small>
+								<small><a href="#" class="dropdown-item">Pembayaran</a></small>
+								<small><a href="#" class="dropdown-item">Pengiriman</a></small>
+								<small><a href="#" class="dropdown-item">Pembelian</a></small>
+								<small><a href="#" class="dropdown-item">Panduan Lainnya</a></small>
+								<div class="dropdown-divider"></div>
+								<small><p class="ml-4" style="color:#0E0E0E;">Bantuan 24/7</p></small>
+								<small><a href="#" class="dropdown-item disabled" style="color:#0E0E0E;"><i class="bi bi-telephone-fill mr-2"></i>0895 3432 40377</a></small>
+								<small><a href="mailto:costumer.care&#64;IziPizi.com" class="dropdown-item" style="color:#0E0E0E;"><i class="bi bi-envelope-fill mr-2"></i>costumer.care@IziPizi.com</a></small>
+							</div>
+							<div class="btn-group">
+							<button class="btn btn-sm dropdown-toggle shadow-none" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color:#0E0E0E;color:white;font-size:12px;">
+							<i class="bi bi-person-circle mr-1"></i>Hi,Taufik Akbar
+							</button>
+							<div class="dropdown-menu">
+								<small><a href="#" class="dropdown-item"><i class="bi bi-bag-fill mr-3"></i>Daftar Pesanan</a></small>
+								<small><a href="#" class="dropdown-item"><i class="bi bi-bootstrap-reboot mr-3"></i>Pengembalian</a></small>
+								<small><a href="#" class="dropdown-item"><i class="bi bi-heart-fill mr-3"></i>Wishlist</a></small>
+								<div class="dropdown-divider"></div>
+								<div class="row" id="drop">
+									<div class="col-6" style="border-right:1px solid gold;">
+										<a class="dropdown-item text-primary" href="pelanggan.html">Profil</a>
+									</div>
+									<div class="col-6">
+										<a class="dropdown-item text-primary" href="home.html" style="margin-left:-20px;">Logout</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						</div>
+					</div>
+				</div><!-- Tutup row -->
+			</div><!-- Tutup div col-12 -->
+		</div><!-- Tutup row -->
+	</div><!-- Tutup container -->
+	
+	<div class="container" style="margin-top:200px;">
+        <div class="row mt-5">
+            <div class="row tiles col-12 col-lg-5" style="height:600px;">
+                <div class="col-12 tile h-75 border mb-3 cursor-img rounded" data-scale="2.2" data-image="asset/air.jpg"></div>  <!-- untuk zoom in produk-->
+                <div class="col-12 container">
+				<!-- untuk varian produk-->
+                    <div class="row h-100">
+                        <div class="d-flex justify-content-center w-100 pt-1" style="margin-left:-1px;">
+                            <button class="shadow-none" onclick="setImage('asset/air.jpg')" style="width:25%;background:none;border:none;">
+                                <img class="border w-100" src="asset/air.jpg" alt="a">
+                            </button>
+                            <button onclick="setImage('asset/forca.jpg')" style="width:21%;background:none;border:none;">
+                                <img class="border w-100 rounded" src="asset/forca.jpg" alt="b">
+                            </button>
+                            <button onclick="setImage('asset/forc.jpg')"  style="width:21%;background:none;border:none;">
+                                <img class="border w-100 rounded" src="asset/forc.jpg" alt="c">
+                            </button>
+                            <button onclick="setImage('asset/forceb.jpg')" style="width:25%;background:none;border:none;">
+                                <img class="border w-100 rounded" src="asset/forceb.jpg" alt="d">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			<div class="col-12 col-lg-7 pl-lg-5">
+                <p class="h5 mt-2 font-weight-bold">NIKE AIR FORCE 1</p>
+                <p class="mt-4" style="font-size: 14px; letter-spacing: 1px;">5.0 <i class="bi bi-star-fill text-warning">&nbsp;</i><i class="bi bi-star-fill text-warning">&nbsp;</i><i class="bi bi-star-fill text-warning">&nbsp;</i><i class="bi bi-star-fill text-warning">&nbsp;</i><i class="bi bi-star-fill text-warning">&nbsp;</i>
+				<small>(50)</small> <b class="dots text-secondary">Terjual 400rb Produk</b>
+                </p>
+                <div class="d-flex text-top">
+                    <p class="prize opensans lightgrey m-0">
+                        HARGA
+                    </p>
+                    <h6 class="detailprice">Rp1.008.000</h6>
+                    <input type="number" name="price" id="price" class="d-none" value="1008000">
+					<h5 class="text-warning small" style="margin-top:40px;margin-left:-125px;"><s><span class="badge  badge-warning text-light mr-2">16%</span>Rp 1.200.000</s></h5>
+					
+                </div>
+
+                <div class="d-flex text-top">
+                    <p class="prize opensans lightgrey m-0">
+                        JUMLAH
+                    </p>
+                    <div style="margin-left: 5rem;">
+                        <p class="opensans" style="margin: 0; font-size: 14px;">Stok Tersedia</p>
+                        <div class="d-flex">
+                            <button onclick="decValue(1)" value="Decrement Value"><i class="bi bi-dash mr-2" style="color: grey"></i></button>
+                            <input class="text" type="number" min="1" oninput="validity.valid||(value='');" id="number" value="1">
+                            <button onclick="incrementValue()" value="Increment Value"><i class="bi bi-plus ml-2" style="color: green"></i></button>
+                            <p class="mb-0 ml-1 opensans d-flex align-items-center" style="color: rgba(49, 53, 59, 0.68); font-size: 12px;">Min. pembelian 1 pcs! </p>
+                        </div>
+                        <p class="note mt-3 text-primary" type="button" data-toggle="collapse" data-target="#note">Tulis catatan untuk penjual<i class="bi bi-pencil ml-2"></i></p>
+						<div id="note" class="collapse">
+							<form action="#">
+								<textarea name="note" id="" cols="30" rows="3"></textarea>
+							</form>
+						</div>
+                    </div>
+                </div>
+
+                <div class="d-flex text-top">
+                    <p class="prize opensans lightgrey m-0">
+                        INFO PRODUK
+                    </p>
+                    <div class="row d-flex flex-md-row flex-column" style="margin-left: 5rem;">
+                        <div class="col-3 px-2 info-produk d-flex mr-3">
+                            <div style="font-size: 1em;">
+                                <p class="mb-md-2 mb-0">Berat</p>
+                                <b class="m-0">650gr</b>
+                            </div>
+                        </div>
+                        <div class="col-3 px-2 info-produk d-flex mr-3">
+                            <div>
+                                <p class="mb-md-2 mb-0 mt-2 mt-md-0">Kondisi</p>
+                                <b class="m-0">Baru</b>
+                            </div>
+                        </div>
+                        <div class="col-3 px-2 info-produk d-flex">
+                            <div>
+                                <p class="mb-md-2 mb-0 mt-2 mt-md-0">Asuransi</p>
+                                <b class="m-0">Opsional</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex text-top">
+                    <p class="prize opensans lightgrey m-0 w-25">
+                        TOTAL<br><span class="font-weight-bold text-dark" style="font-size: 1rem;" id="totalPrice">Rp. 1008000</span>
+                    </p>
+                    <div class="row d-flex flex-md-row flex-column w-100" style="margin-left: 1rem;">
+                        <div class="col-6 d-flex px-2 w-100">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-warning w-100 hvr" data-toggle="modal" data-target="#myModal">
+                                Beli
+                            </button>
+							<!-- The Modal-->
+							<div class="modal" id="myModal">
+								<div class="modal-dialog">
+									<div class="modal-content">
+									<!--Modal Header-->
+										<div class="modal-header">
+										<h4 class="modal-title font-weight-bold">Total Pesanan</h4>
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										</div>
+									
+									<!--Modal Body-->
+										<div class="modal-body">
+										<div class="row">
+										<div class="col-md-12">
+											<span>Tanggal Pesanan&#58; 07&#47;06&#47;2021</span>
+											<span class="float-right">Pukul&#58; 10&#58;24&#58;05</span>
+											<hr>
+											<p><i>Kode Pesanan&#58; ADR010101ABC</i></p>
+											<hr>
+												<b>Penerima</b><br>
+												<form role="form">
+												<div class="form-group">
+													<label>Nama&#58;</label><br>
+													<input type="text" style="width:20em;">
+												</div>
+												<div class="form-group">
+													<label>Alamat&#58;</label><br>
+													<textarea style="width:20em;"></textarea>
+												</div>
+												</form>
+											<br>
+												<b>Pesanan</b><br>
+												<div>
+												<img src="asset/forceutama.jpg" alt="detail product 1" width="80" height="80">
+												<b style="font-size:1em;" class="ml-2">NIKE AIR FORCE 1</b><br>
+												</div>
+											<br>
+												<p>Harga&#58; Rp 1.008.000</p>
+												<p>Kuantitas&#58; 1</p>
+												<form>
+												<div class="form-group">
+												<label>Jasa Pengiriman&#58;</label>
+												<select class="form-control">
+													<option>JNE</option>
+													<option>J&#38;T</option>
+													<option>TiKi</option>
+													<option>Pos Indonesia</option>
+													<option>SiCepat Express</option>
+													<option>Go Send</option>
+													<option>Grab Express</option>
+												</select>
+												</div>
+												</form>
+												<p>Biaya Pengiriman&#58; Rp 50.000</p>
+												<form role="form">
+												<div class="form-group">
+													<label>Voucer&#58;</label>
+													<input type="text" style="width:16em;" placeholder="Gunakan Voucer">
+												</div>
+												</form>
+											<br>
+												<b>Pembayaran</b><br>
+												<form>
+												<div class="form-group">
+												<label>Metode Pembayaran&#58;</label>
+												<select class="form-control">
+													<option>Virtual Account</option>
+													<option>Bank Transfer</option>
+													<option>Kredit</option>
+													<option>Ovo</option>
+													<option>Dana</option>
+													<option>GoPay</option>
+													<option>COD&#47;Cash On Delivery</option>
+												</select>
+												</div>
+												</form>
+												<p>
+													<small>Subtotal untuk Produk &#58; Rp 1.008.000
+													<br>
+													Subtotal untuk Pengiriman &#58; Rp 50.000
+													</small>
+												</p>
+											<br>
+											<h4 class="modal-title font-weight-bold">Total Pembayaran&#58; Rp 1.058.000</h4>							
+										</div>
+										</div>
+										</div>
+										
+										<!--Modal Footer-->
+										<div class="modal-footer">
+										<button type="button" class="btn btn-warning" data-dismiss="modal" onclick="beli()">Beli</button>
+										<button type="button" class="btn btn-dark" data-dismiss="modal">Batal</button>
+										</div>
+									</div><!--Tutup modal-content-->
+								</div>
+							</div>
+                        </div>
+
+                        <div class="col-6 d-flex px-2 w-100 align">
+                            <a class="btn btn-outline-dark w-100 d-flex align-items-center justify-content-center" style="font-size: 0.9rem;" href="#" role="button">Tambah Ke Keranjang</a>
+                        </div>
+						<a href="#" class="share border rounded px-3 py-2 text-decoration-none align-items-center mt-4 mr-4 text-secondary" style="margin-left:60px;">
+							<i class="bi bi-chat-fill"></i>
+							<span class="m-0 ml-2">Chat</span>
+						</a>
+						<a href="#" class="share border rounded px-3 py-2 text-decoration-none align-items-center mt-4 mr-4 text-secondary">
+							<i class="bi bi-heart-fill"></i>
+							<span class="m-0 ml-2">Wishlist</span>
+						</a>
+						<a href="#" class="share border rounded px-3 py-2 text-decoration-none align-items-center mt-4 text-secondary">
+							<i class="bi bi-share-fill"></i>
+							<span class="m-0 ml-2">Share</span>
+						</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- Tutup container-->
+	
+	<div class="container" style="padding-bottom:80px;">
+		<div class="row">
+			<div class="col-12 shadow mt-5" style="border-radius:10px;padding-bottom:50px;">
+				<ul class="nav nav-tabs text-dark">
+					<li class="nav-item">
+						<a href="#desk" class="nav-link active font-weight-bold" data-toggle="tab">Deskripsi</a>
+					</li>
+					<li class="nav-item">
+						<a href="#ulas" class="nav-link font-weight-bold" data-toggle="tab">Ulasan</a>
+					</li>
+					<li class="nav-item">
+						<a href="#diskusi" class="nav-link font-weight-bold" data-toggle="tab">Diskusi</a>
+					</li>
+					<li class="nav-item">
+						<a href="#rekomendasi" class="nav-link font-weight-bold" data-toggle="tab">Rekomendasi</a>
+					</li>
+				</ul>
+				<div class="tab-content">
+					<!-- pulsa -->
+					<div id="desk" class="tab-pane fade show active text-dark">
+						<ul class="mt-3"><p class="h5 font-weight-bold mt-4 ml-1 mb-4">NIKE AIR FORCE 1</p>
+							<small>
+							<li>Bahan Semi Kulit Berkualitas Dengan Jahitan Rapi</li>
+							<li>Kondisi Baru</li>
+							<li>Dapat Dibersihkan Dengan Sikat Lembut Secara Merata</li>
+							<li>Produk Ini Bisa Bayar Ditempat &#40; COD &#41;  Cash On Delivery</li>
+							<li>Dengan Estimasi Pengiriman 2&#45;7 Hari Tergantung Kurir &#45; Ekspesisi Serta Kelengkapan Alamat</li>
+							<li>Harap Mengisi Alamat Dengan Lengkap Untuk Menghindari Bad Addres &#40; Alamat Tidak Ditemukan &#41; </li>
+							<li>Segala Bentuk Perubahan Tidak Bisa Kami Lakukan Karena Berdasarkan Sistem &#45; Kami Juga Mengirimkan Barang Dihari Yang Sama</li>
+							<li>Sebelum Order Mohon Cek Kembali Daftar Pesanan Anda Untuk Menghindari &#34;Double Order&#34;</li>
+							</small>
+						</ul>
+						<p class="h5 font-weight-bold ml-5">Ulasan</p>
+					<div class="row w-100">
+							<div class="text-center col-6 col-md-2">
+								<h1 style="font-size: 3em; font-weight: normal;">5.0<span style="font-size: 0.4em; font-weight: normal;">/5</span></h1>
+								<div>
+									<i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i><i class="bi bi-star-fill text-warning"></i>
+								</div>
+								<p class="text-center">(50) Ulasan</p>
+							</div>
+						<div class="col-6 col-md-10">
+							<div class="d-flex align-items-center w-100">
+								<p class="m-0"><i class="bi bi-star-fill text-warning"></i></p>
+								<p class="m-0 ml-1">5</p>
+								<div class="progress ml-2" style="height: 5px; width: 200px;">
+									<div class="progress-bar bg-warning" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+								<p class="m-0 ml-2">40</p>
+							</div>
+							<div class="d-flex align-items-center w-100">
+								<p class="m-0"><i class="bi bi-star-fill text-warning"></i></p>
+								<p class="m-0 ml-1">4</p>
+								<div class="progress ml-2" style="height: 5px; width: 200px;">
+									<div class="progress-bar bg-warning" role="progressbar" style="width: 15%;" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+								<p class="m-0 ml-2">7</p>
+							</div>
+							<div class="d-flex align-items-center w-100">
+								<p class="m-0"><i class="bi bi-star-fill text-warning"></i></p>
+								<p class="m-0 ml-1">3</p>
+									<div class="progress ml-2" style="height: 5px; width: 200px;">
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 5%;" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+								<p class="m-0 ml-2">2</p>
+							</div>
+							<div class="d-flex align-items-center w-100">
+								<p class="m-0"><i class="bi bi-star-fill text-warning"></i></p>
+								<p class="m-0 ml-1">2</p>
+								<div class="progress ml-2" style="height: 5px; width: 200px;">
+									<div class="progress-bar bg-warning" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+								<p class="m-0 ml-2">0</p>
+							</div>
+							<div class="d-flex align-items-center w-100">
+								<p class="m-0"><i class="bi bi-star-fill text-warning"></i></p>
+								<p class="m-0 ml-1">1</p>
+								<div class="progress ml-2" style="height: 5px; width: 200px;">
+									<div class="progress-bar bg-warning" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+								<p class="m-0 ml-2">0</p>
+							</div>
+						</div>
+					</div>
+						<div class="mt-3 ml-5">
+							<p class="text-uppercase text-secondary font-weight-bold" style="font-size: 12px;">Foto dari pembeli &#40; 2&#41; </p>
+							<div class="mb-3">
+							<img class="rounded mr-2" style="width: 100px;" src="asset/forceutama.jpg" alt="gambar-pembeli-1">
+							<img class="rounded mr-2" style="width: 100px;" src="asset/forceutama.jpg" alt="gambar-pembeli-2">
+							</div>
+						</div>
+								
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<div class="container-fluid shadow" style="padding-bottom:50px;">
+	<hr>
+		<div class="container">
+			<div class="row mt-4">
+				<div class="col-2">
+					<div class="font-weight-bold h6">
+					IziPizi
+					</div>
+					<ul class="list-unstyled">
+						<li class="px-0 py-1">
+							<a href="#" class="text-secondary text-decoration-none">
+								Tentang IziPizi
+							</a>
+						</li>
+						<li class="px-0 py-1">
+							<a href="#" class="text-secondary text-decoration-none">
+								Karir
+							</a>
+						</li>
+						<li class="px-0 py-1">
+							<a href="#" class="text-secondary text-decoration-none">
+								Blog
+							</a>
+						</li>
+						<li class="px-0 py-1">
+							<a href="#" class="text-secondary text-decoration-none">
+								Kabar Terbaru
+							</a>
+						</li>
+						<li class="px-0 py-1">
+							<a href="#" class="text-secondary text-decoration-none">
+								Bridestory
+							</a>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="col-3">
+					<div class="font-weight-bold h6">
+					Beli
+					</div>
+					<ul class="list-unstyled">
+						<li class="px-0 py-1">
+							<a href="#" class="text-secondary text-decoration-none">
+								Tagihan & Top Up
+							</a>
+						</li>
+						<li class="px-0 py-1">
+							<a href="#" class="text-secondary text-decoration-none">
+								Tukar Tambah Handphone
+							</a>
+						</li>
+						<li class="px-0 py-1">
+							<a href="#" class="text-secondary text-decoration-none">
+								IziPizi COD
+							</a>
+					</ul>
+					<div class="font-weight-bold h6">
+					Jual
+					</div>
+					<ul class="list-unstyled">
+						<li class="px-0 py-1">
+							<a href="#" class="text-secondary text-decoration-none">
+								Tagihan & Top Up
+							</a>
+						</li>
+						<li class="px-0 py-1">
+							<a href="#" class="text-secondary text-decoration-none">
+								Tukar Tambah Handphone
+							</a>
+						</li>
+						<li class="px-0 py-1">
+							<a href="#" class="text-secondary text-decoration-none">
+								IziPizi COD
+							</a>
+					</ul>
+				</div>
+				<div class="col-3">
+					<div class="font-weight-bold h6">
+					Bantuan Dan Panduan
+					</div>
+					<ul class="list-unstyled">
+						<li class="px-0 py-1">
+							<a href="#" class="text-secondary text-decoration-none">
+								IziPizi Care
+							</a>
+						</li>
+						<li class="px-0 py-1">
+							<a href="#" class="text-secondary text-decoration-none">
+								Syarat Dan Ketentuan
+							</a>
+						</li>
+						<li class="px-0 py-1">
+							<a href="#" class="text-secondary text-decoration-none">
+								Kebijakan Privasi
+							</a>
+						</li>
+					</ul>
+					<div class="font-weight-bold h6">
+					Keamanan
+					</div>
+					<ul class="list-unstyled">
+						<li class="px-0 py-1">
+							<div class="row">
+								<div class="col-6">
+								<a href="#" class="text-secondary text-decoration-none">
+									<img src="asset/keamanan2.png" height="55px;" width="90px;">		
+								</a>
+								</div>
+								<div class="col-6">
+								<a href="#" class="text-secondary text-decoration-none">
+									<img src="asset/keamanan.png" height="55px;" width="90px;">		
+								</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<div class="font-weight-bold h6">
+					Ikuti Kami
+					</div>
+					<a href="#" id="icon" class="text-primary text-decoration-none">
+						<i class="bi bi-facebook mr-3"></i>
+					</a>
+					<a href="#" id="icon" class="text-decoration-none" style="color:#00BFFF">
+						<i class="bi bi-twitter mr-3 "></i>
+					</a>
+					<a href="https://www.instagram.com/taufikakbaar_/" id="icon" class="text-decoration-none" style="color:#FF1493">
+						<i class="bi bi-instagram mr-1"></i>
+					</a>
+				</div>
+				<div class="col-4">
+					<img src="asset/logo.png" width="180px;" height="145px;" style="margin-left:90px;">
+					<div class="row">
+						<div class="col-6">
+							<a href="#"><img src="asset/playstore.png" width="110px;" height="35px;" class="mt-2" style="border-radius:5px;margin-left:60px;"></a>
+						</div>
+						<div class="col-6">
+							<a href="#"><img src="asset/app.png" width="110px;" height="35px;" class="mt-2 mr-1" style="border-radius:5px;margin-left:10px;"></a>
+						</div>
+					</div>
+					<p class="small mt-4 font-weight-bold text-secondary" style="margin-left:60px;">&copy; 2015 - 2021, PT. IziPizi By Taufik Akbar</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<button href="#" class="btn text-warning shadow fixed-bottom font-weight-bold mb-3" style="background-color:white;border-radius:20px;width:110px;margin-left:1350px;font-family:poppins;"><i class="bi bi-chat-fill mr-2 text-warning"></i>Chat</button>
+
+    <!-- jquery, Popper and Bootstrap JS -->
+    <script src="bootstrap/js/jquery.min.js"></script>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+	
+	<!-- Untuk profil Sidebar -->
+	<script type="text/javascript">
+		function myFunction1(){
+		var x= document.getElementById("profil");
+		if(x.style.display==="none"){
+			x.style.display="block";
+		}else{
+			x.style.display="none";
+		}
+		}
+	</script>
+	
+	<!-- Untuk kotakmasuk Sidebar -->
+	<script type="text/javascript">
+		function myFunction2(){
+		var x= document.getElementById("kotakmasuk");
+		if(x.style.display==="none"){
+			x.style.display="block";
+		}else{
+			x.style.display="none";
+		}
+		}
+	</script>
+	
+	<!-- Untuk Ulasan Sidebar -->
+	<script type="text/javascript">
+		function myFunction3(){
+		var x= document.getElementById("pembelian");
+		if(x.style.display==="none"){
+			x.style.display="block";
+		}else{
+			x.style.display="none";
+		}
+		}
+	</script>
+	
+	<!-- untuk gantii produk gambar di klik-->
+	<script type="text/javascript">
+		    function setImage(url) {
+            const bigImage = document.querySelector(".tile");
+            bigImage.setAttribute("data-image", url)
+
+            $('.tile')
+                // tile mouse actions
+                .on('mouseover', function() {
+                    $(this).children('.photo').css({
+                        'transform': 'scale(' + $(this).attr('data-scale') + ')'
+                    });
+                })
+                .on('mouseout', function() {
+                    $(this).children('.photo').css({
+                        'transform': 'scale(1)'
+                    });
+                })
+                .on('mousemove', function(e) {
+                    $(this).children('.photo').css({
+                        'transform-origin': ((e.pageX - $(this).offset().left) / $(this).width()) * 100 + '% ' + ((e.pageY - $(this).offset().top) / $(this).height()) * 100 + '%'
+                    });
+                })
+                // tiles set up
+                .each(function() {
+                    console.log(this)
+                    $(this)
+                        // add a photo container
+                        .append('<div class="photo"></div>')
+                        // set up a background image for each tile based on data-image attribute
+                        .children('.photo').css({
+                            'background-image': 'url(' + $(this).attr('data-image') + ')',
+                        });
+                })
+        }
+        setImage("asset/air.jpg")<!-- untuk set produk gambar yg a dulu-->
+	</script>
+	
+		<script type="text/javascript">
+		document.getElementById('number').addEventListener('test', () => totalPrice())
+        const incrementValue = () => {
+            let value = parseInt(document.getElementById('number').value, 10)
+            value = isNaN(value) ? 1 : (value + 1)
+            document.getElementById('number').value = value
+            if (value > 1) {
+                $('.bi-dash').css("color", "red")
+            }
+            totalPrice()
+        }
+
+        const decValue = (minimum) => {
+            let value = parseInt(document.getElementById('number').value, 10)
+            value = isNaN(value) ? 0 : (value - 1)
+            document.getElementById('number').value = value
+            if (value < parseInt(minimum)) {
+                swal({
+                    title: "MAAF!",
+                    text: "Anda tidak mencapai minimum pembelanjaan!",
+                    icon: "error",
+                    button: "OK",
+                });
+                document.getElementById('number').value = (value + 1)
+            } else if (value == parseInt(minimum)) {
+                $('.bi-dash').css("color", "grey")
+            }
+            totalPrice()
+        }
+
+        const totalPrice = () => {
+            const price = parseInt(document.querySelector("#price").value)
+            const qty = parseInt(document.getElementById('number').value)
+            const total = isNaN(price * qty) ? 1008000 : price * qty
+            document.getElementById('totalPrice').innerHTML = `Rp. ${total}`
+        }
+
+        const beli = () => {
+            swal({
+               title: "Transaksi Berhasil!",
+                text: "Terima Kasih telah Berbelanja di ALdera",
+                icon: "success",
+                button: "Ok",
+            })
+            .then(() => $('#exampleModalCenter').modal('hide'))
+        }
+
+	</script>
+	
+	<script type="text/javascript">
+		function setTab(evt) {
+            [...document.getElementsByClassName("btn-style")].forEach(btn => {
+                btn.classList.remove('active')
+            });
+            evt.currentTarget.classList.add("active")
+        }
+	</script>
+	
+  </body>
+</html>

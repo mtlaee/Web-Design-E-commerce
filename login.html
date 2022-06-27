@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<link rel="stylesheet" href="izipizi.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="icon" href="bootstrap/asset/logo/favicon.ico">
+	<link rel="stylesheet" href="bootstrap/icons/fonts/bootstrap-icons.css"> <!-- koneksi icon bootstrap offline -->
+    <title>IziPizi Login</title>
+	<style>
+		.dropdown-item:hover{background-color:gold;}
+	</style>
+  </head>
+  <body>
+    <div class="container-fluid" style="font-family:poppins">
+		<div class="row">
+			<div class="div col-12">
+				<nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color:white;margin-top:24px;">
+					<a href="home.html" class="navbar-brand" style="padding-left:100px;">
+						<img src="asset/logo.png" id="logo" width="120" height="120">
+					</a>
+					<button class="navbar-toggler" id="togel" type="button" data-toggle="collapse" data-target="#mt">
+						<span class="navbar-toggler-icon"></span><!-- buat icon toogle -->
+					</button>
+					<form action="#" class="form-group form-inline col-md-7 mt-3" style="margin-left:10px;">
+						<div class="input-group" style="width:100%;">
+							<input type="text" class="form-control font-weight-light shadow-none" placeholder="Cari produk, merk dan toko" style="padding:20px;border:1px solid;border-radius:10px;"><!-- buat bacaan search ke dalam -->							
+						<div class="btn text-light font-weight-bold" type="button" style="background-color:#0E0E0E;border:0px solid ;border-radius:10px;margin-left:10px;">
+							<i class="bi bi-search"></i>
+						</div>
+						</div>
+					</form>
+					
+					<div class="collapse navbar-collapse" id="mt">
+						<ul class="navbar-nav ml-2" style="">
+							<li>
+								<a href="#" id="keranjang"><i class="bi bi-cart2" style="font-size:30px;color:#0E0E0E;"></i></a><span class="badge ml-1 mr-5" id="notip1" style="background-color:red;position:absolute;boder:0px solid;border-radius:10px;color:white;top:50px;">0</span>
+							</li>
+							<li class="mt-1" id="masuk" style="margin-left:48px;">
+								<a href="login.html" class="btn btn-outline-warning w-90 ml-2 font-weight-bold" style="border-radius:10px;color:black;font-size:14px;">Masuk</a>
+							</li>
+								<span class="ml-3 mt-2" id="garis">&#124;</span>
+							<li class="mt-1 ml-2" id="daftar">
+								<a href="daftarpelanggan.html" class="btn w-90 ml-2 font-weight-bold" style="border-radius:10px;color:#0E0E0E;background-color:gold;font-size:14px;">Daftar</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+				<div class="row fixed-top pb-5">
+					<div class="col-md-6" style="background-color:#0E0E0E;padding-left:140px;">
+						<span style="font-size:13.5px;"><a href="#" class="text-decoration-none mr-1" role="button" style="color:white;font-family:arial;" id="donglod">Download
+						&#124;</a></span>
+						<span style="color:white;font-size:12px;">Ikuti kami di<a href="#"><i class="bi bi-facebook ml-2 text-light"></i></a></span>
+						<span style="color:white;font-size:12px;"><a href="#"><i class="bi bi-instagram ml-2 text-light"></i></a></span>
+						<span style="color:white;font-size:12px;"><a href="#"><i class="bi bi-twitter ml-2 text-light"></i></a></span>
+					</div>
+					<div class="col-md-6 text-right" style="background-color:#0E0E0E;padding-right:126px;color:white;">
+						<span style="color:white;font-size:12px;"><a href="daftarpenjual.html" class="text-decoration-none mr-2 tex-right" role="button" style="color:white;">Jual di IziPizi</a></span>
+						<span style="color:white;font-size:12px;"><a href="#" class="text-decoration-none mr-1 ml-1 tex-right" role="button" style="color:white;"><i class="bi bi-bell-fill mr-1" style=""></i>Notifikasi</a></span>
+						<div class="btn-group">
+							<button class="btn btn-sm dropdown-toggle shadow-none" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color:#0E0E0E;color:white;font-size:12px;">
+							<i class="bi bi-headset mr-1"></i>Bantuan 24/7
+							</button>
+							<div class="dropdown-menu">
+								<small><a href="#" class="dropdown-item">FAQ</a></small>
+								<small><a href="#" class="dropdown-item">Pembayaran</a></small>
+								<small><a href="#" class="dropdown-item">Pengiriman</a></small>
+								<small><a href="#" class="dropdown-item">Pembelian</a></small>
+								<small><a href="#" class="dropdown-item">Panduan Lainnya</a></small>
+								<div class="dropdown-divider"></div>
+								<small><p class="ml-4" style="color:#0E0E0E;">Bantuan 24/7</p></small>
+								<small><a href="#" class="dropdown-item disabled" style="color:#0E0E0E;"><i class="bi bi-telephone-fill mr-2"></i>0895 3432 40377</a></small>
+								<small><a href="mailto:costumer.care&#64;IziPizi.com" class="dropdown-item" style="color:#0E0E0E;"><i class="bi bi-envelope-fill mr-2"></i>costumer.care@IziPizi.com</a></small>
+							</div>
+						</div>
+					</div>
+				</div><!-- Tutup row -->
+			</div><!-- Tutup div col-12 -->
+		</div><!-- Tutup row -->
+		<div class="row" style="margin-top:11.5em">
+			<div class="col-10 offset-md-1 shadow" id="wadah" style="border-radius:20px;">
+				<div class="row">
+					<div class="col-md-6" style="border-radius:20px;">
+						<p class="h4 font-weight-bold pt-4 text-center" style="color:#0E0E0E;font-size:40px;color:black;">Masuk ke <span style="color:gold;">Akun</span>mu</p>
+						<p class="text-center">Belum Punya Akun &#63; &#124; <a href="daftarpelanggan.html" class="text-decoration-none" target="blank">Daftar</a></p>
+						<div class="row">
+							<div class="col-sm-10  offset-md-1 shadow bg-light" style="margin-top:1.2em;border-radius:20px;">
+								<form method="post" role="form" action="homepelanggan.html">
+									<div class="form-group mt-4">
+										<input type="text" class="form-control" placeholder="E-mail/nomor HP" style="border-radius:10px;padding:20px;">
+									</div>
+									<div class="form-group mt-4">
+										<input type="password" class="form-control" placeholder="Kata Sandi" style="border-radius:10px;padding:20px;">
+									</div>
+									<button class="btn btn-block font-weight-bold mb-3" style="background-color:gold;border-radius:20px;">Masuk</button>
+									<p class="text-center mt-2" style="font-size:14px;"><a href="#" class="text-decoration-none">Lupa Kata Sandi&#63;</a></p>
+								</form>
+							</div>
+							<a href="https://www.facebook.com/" class="btn btn-block font-weight-bold mb-3 mt-4 shadow-none" style="background-color:#3b5998;border-radius:20px;width:140px;height:40px;margin-left:155px;" id="pesbuk"><i class="bi bi-facebook text-light mr-1"></i><span style="color:white;">Facebook</span></a>
+							<a href="https://accounts.google.com/signin/v2/identifier?hl=ID&flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="btn btn-block font-weight-bold mb-3 mt-4 ml-4 shadow-none" style="border-radius:20px;width:140px;height:40px;background-color:#F5F5F5;" id="jugle"><img src="asset/gogle.png" width="19" height="19"><span class="ml-2" style="color:gray;">Google</span></a>					
+						</div>
+						<br><br>
+					</div>
+					<div class="col-md-6" style="border-radius:20px;" id="gambarlogin">
+						<img src="asset/s.png" width="500" height="400" class="mt-5" style="margin-left:90px;">
+						<br><br>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!-- Tutup container -->
+	<div class="container-fluid shadow" style="padding-bottom:50px;margin-top:100px;">
+	<hr>
+		<div class="container">
+			<div class="row mt-4">
+				<div class="col-md-2">
+					<div class="font-weight-bold h6">
+					IziPizi
+					</div>
+					<ul class="list-unstyled">
+						<li class="px-0 py-1">
+							<a href="#" class="text-secondary text-decoration-none">
+								Tentang IziPizi
+							</a>
+						</li>
+						<li class="px-0 py-1">
+							<a href="#" class="text-secondary text-decoration-none">
+								Karir
+							</a>
+						</li>
+						<li class="px-0 py-1">
+							<a href="#" class="text-secondary text-decoration-none">
+								Blog
+							</a>
+						</li>
+						<li class="px-0 py-1">
+							<a href="#" class="text-secondary text-decoration-none">
+								Kabar Terbaru
+							</a>
+						</li>
+						<li class="px-0 py-1">
+							<a href="#" class="text-secondary text-decoration-none">
+								Bridestory
+							</a>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="col-md-3">
+					<div class="font-weight-bold h6">
+					Beli
+					</div>
+					<ul class="list-unstyled">
+						<li class="px-0 py-1">
+							<a href="#" class="text-secondary text-decoration-none">
+								Tagihan & Top Up
+							</a>
+						</li>
+						<li class="px-0 py-1">
+							<a href="#" class="text-secondary text-decoration-none">
+								Tukar Tambah Handphone
+							</a>
+						</li>
+						<li class="px-0 py-1">
+							<a href="#" class="text-secondary text-decoration-none">
+								IziPizi COD
+							</a>
+					</ul>
+					<div class="font-weight-bold h6">
+					Jual
+					</div>
+					<ul class="list-unstyled">
+						<li class="px-0 py-1">
+							<a href="#" class="text-secondary text-decoration-none">
+								Tagihan & Top Up
+							</a>
+						</li>
+						<li class="px-0 py-1">
+							<a href="#" class="text-secondary text-decoration-none">
+								Tukar Tambah Handphone
+							</a>
+						</li>
+						<li class="px-0 py-1">
+							<a href="#" class="text-secondary text-decoration-none">
+								IziPizi COD
+							</a>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<div class="font-weight-bold h6">
+					Bantuan Dan Panduan
+					</div>
+					<ul class="list-unstyled">
+						<li class="px-0 py-1">
+							<a href="#" class="text-secondary text-decoration-none">
+								IziPizi Care
+							</a>
+						</li>
+						<li class="px-0 py-1">
+							<a href="#" class="text-secondary text-decoration-none">
+								Syarat Dan Ketentuan
+							</a>
+						</li>
+						<li class="px-0 py-1">
+							<a href="#" class="text-secondary text-decoration-none">
+								Kebijakan Privasi
+							</a>
+						</li>
+					</ul>
+					<div class="font-weight-bold h6">
+					Keamanan
+					</div>
+					<ul class="list-unstyled">
+						<li class="px-0 py-1">
+							<div class="row">
+								<div class="col-sm-6">
+								<a href="#" class="text-secondary text-decoration-none">
+									<img src="asset/keamanan2.png" height="55px;" width="90px;">		
+								</a>
+								</div>
+								<div class="col-sm-6">
+								<a href="#" class="text-secondary text-decoration-none">
+									<img src="asset/keamanan.png" height="55px;" width="90px;">		
+								</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<div class="font-weight-bold h6">
+					Ikuti Kami
+					</div>
+					<a href="#" id="icon" class="text-primary text-decoration-none">
+						<i class="bi bi-facebook mr-3"></i>
+					</a>
+					<a href="#" id="icon" class="text-decoration-none" style="color:#00BFFF">
+						<i class="bi bi-twitter mr-3 "></i>
+					</a>
+					<a href="https://www.instagram.com/taufikakbaar_/" id="icon" class="text-decoration-none" style="color:#FF1493">
+						<i class="bi bi-instagram mr-1"></i>
+					</a>
+				</div>
+				<div class="col-md-4">
+					<img src="asset/logo.png" width="180px;" height="145px;" style="margin-left:90px;">
+					<div class="row">
+						<div class="col-6">
+							<a href="#"><img src="asset/playstore.png" width="110px;" height="35px;" class="mt-2" style="border-radius:5px;margin-left:60px;"></a>
+						</div>
+						<div class="col-6">
+							<a href="#"><img src="asset/app.png" width="110px;" height="35px;" class="mt-2 mr-1" style="border-radius:5px;margin-left:10px;"></a>
+						</div>
+					</div>
+					<p class="small mt-4 font-weight-bold text-secondary" style="margin-left:60px;">&copy; 2015 - 2021, PT. IziPizi By Taufik Akbar</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <!-- jquery, Popper and Bootstrap JS -->
+    <script src="bootstrap/js/jquery.min.js"></script>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,261 @@
+@media only screen and (max-width:768px){
+	#logo{width:100px;height:100px;margin-top:25px;margin-left:-90px;}
+	#logo2{width:100px;height:100px;margin-top:25px;margin-left:-130px;}
+	#logo25{width:100px;height:100px;margin-top:25px;margin-left:-130px;}
+	#togel{margin-top:27px;}
+	#masuk{left:-18px;position:absolute;top:216px;}
+	#daftar{left:24px;position:absolute;top:275px;}
+	#notip1{position:absolute;left:69px;margin-top:280px;}
+	#notip2{margin-top:0px;}
+	#notif2{margin-top:15px;margin-left:-27px;}
+	#kaos{margin-right:20px;}
+	#chat{margin-top:15px;margin-left:-25px;}
+	#garis{position:absolute;left:110px;top:285px;color:white;}
+	#keranjang{position:absolute;top:330px;left:41px;}
+	#keranjang2{margin-top:20px;margin-left:20px;}
+	#wadah{margin-top:250px;left:40px;padding-bottom:50px;}
+	#navis .col-md-6{display:flex;left:-0px;}
+	#donglod{margin-left:-90px;}
+	#karosel{margin-top:380px;}
+	#kategori{text-align:center;}
+	#ps5{text-align:center;}
+	#ps{margin-right:35px;}
+	#sel{margin-left:33px;position:absolute;top:5px;}
+	#bantu{margin-left:115px;}
+	#sepatuhome{text-align:center;}
+	#bajuhome{text-align:center;}
+	#topup{margin-top:40px;}
+	#pulsahome{padding:10px;}
+	#pakethome{padding:10px;}
+	#listrikhome{padding:10px;}
+	#belipulsa{margin-left:-25px;width:200px;}
+	#nominalpulsa{margin-top:20px;}
+	#belipaket{margin-left:-49px;width:200px;}
+	#jenis{margin-left:-10px;}
+	#tokenlist{margin-left:10px;}
+	#belilis{margin-left:-10px;margin-top:-15px;}
+	#pth{margin-top:-20px;margin-left:-290px;}
+	#pth2{margin-top:15px;margin-left:-290px;}
+	#pth3{margin-top:15px;margin-left:-290px;}
+	#pth4{margin-top:-300px;margin-left:180px;}
+	#pth5{margin-top:-230px;margin-left:190px;}
+	#pth6{margin-top:-90px;margin-left:194px;}
+	#pth6home{margin-top:-160px;margin-left:194px;}
+	#spesial{text-align:center;}
+	#oficial{text-align:center;}
+	#prduk{margin-left:85px;}
+	#gambarlogin img{width:0px;height:0px;}
+	#gambarlogin{height:0px;}
+	#pesbuk{left:-140px;position:absolute;top:430px;}
+	#jugle{position:absolute;top:430px;left:180px;}
+	#wadah2{padding-bottom:85px;}
+	#wadah3{padding-bottom:85px;margin-top:250px;}
+	#pesbuk2{left:-120px;position:absolute;top:480px;}
+	#jugle2{position:absolute;top:480px;left:230px;}
+	#min img{margin-left:-55px;}
+	#minut{margin-top:-47px;}
+	#mins{padding-bottom:20px;position:absolute;}
+	#pesbuk3{left:-130px;position:absolute;top:475px;}
+	#jugle3{position:absolute;top:475px;left:245px;}
+	#pesbuk4{left:-130px;position:absolute;top:565px;}
+	#jugle4{position:absolute;top:565px;left:245px;}
+	#pesbuk5{left:-130px;position:absolute;top:890px;}
+	#jugle5{position:absolute;top:890px;left:245px;}
+	#pelang{margin-top:375px;}
+	#pre{margin-left:-25px;}
+	#pes{margin-left:-50px;}
+	#top{margin-top:40px;margin-left:30px;}
+	#kero{margin-left:-120px;}
+	#amplop{margin-top:15px;}
+	#amplop2{margin-top:15px;}
+	#amplop3{margin-top:15px;margin-left:8px;}
+	#akti{margin-left:-30px;}
+	#akti2{margin-top:20px;margin-bottom:40px;}
+	#cetkuy{margin-right:-190px;}
+	
+}
+
+#drop .dropdown-item:hover{background-color:white;}
+
+#page-content-wrapper{min-width:100vw;}
+
+#sidebar-wrapper{min-height:100vh;
+				 margin-left:-15rem;
+				 -webkit-transition: margin .25s ease-out;
+				 -moz-transition: margin .25s ease-out;
+				 -o-transition:margin .25s ease-out;
+				 transition: margin .25s ease-out;
+				}
+
+#sidebar-wrapper .sidebar-heading{
+							padding: 0.875rem 1.25rem;
+							font-size:1.2rem;
+								}
+
+#recomen a:hover{color:gold;}
+#recomen .col-2 a.selected{color:gold;}
+
+.list-unstyled li a:hover{color:gold;}
+
+
+
+#sidebar-wrapper .list-group{
+	width:15rem;
+}
+
+#wrapper.toggled #sidebar-wrapper{
+	margin-left:0;
+}
+
+#sidebar-wrapper a:hover{color:gold;border-left:4px solid yellow;}
+#sidebar-wrapper a{color:white;}
+
+#sidebarcol2 a:hover{border-left:4px solid gold;}
+
+@media(min-width:768px){
+		#sidebar-wrapper{
+			margin-left:0;
+		}
+		#page-content-wrapper{
+			min-width:0;
+			width:100%;
+		}
+		#wrapper.toggled #sidebar-wrapper{
+			margin-left:-15rem;
+		}
+}	
+
+.card-hover{
+	transition:.3s;
+}
+.card-hover:hover{
+	box-shadow: 0 0 5px #777;
+	transition:.3s;
+	transform:scale(1.1);
+	z-index:1;
+	margin:15px 0;
+}
+
+/*CSS Untuk Detail Produk*/
+.tiles {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.tile {
+    position: relative;
+    width: 85%;
+    height: 100%;
+    overflow: hidden;
+}
+/*untuk zoom in produk*/
+.cursor-img:hover {
+    cursor: zoom-in;
+}
+.photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: transform .5s ease-out;
+}
+.prize {
+    margin: 1.4rem 0;
+}
+.lightgrey {
+    color: #696969;
+    font-weight: 700;
+    font-size: 12px;
+    width: 10%;
+}
+.dots::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 4px;
+    height: 4px;
+    background-color: rgb(108, 114, 124);
+    margin: 0px 8px;
+    border-radius: 50%;
+}
+
+.opensans{
+    font-family: 'open-sans' !important;
+}
+.text-top {
+    padding-bottom: 1.5rem;
+    border-top: 1px solid rgb(229, 231, 233);
+    padding-top: 1.5rem;
+}
+.detailprice{
+    font-size: 24px;
+    font-family: 'nunito-sans-black';
+    color: #DC143C;
+    font-weight: 900;
+    margin-left: 5rem;
+}
+.note {
+    color: #228B22;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'open-sans';
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.side-bar a button:hover {
+    color: rgb(3, 172, 14);
+}
+
+.side-bar a button {
+    color: rgba(49, 53, 59, 0.32);
+}
+.btn-style.active {
+    color: rgb(3, 172, 14);
+    border-bottom: 2px solid rgb(3, 172, 14);
+}
+
+.filter-button {
+    border-radius: 15px;
+    border: 1px solid #E5E7E9;
+}
+
+.filter-button:focus {
+    outline: none;
+    border-color: #4FD15A;
+    background-color: #EBFFEF;
+}
+@media (max-width: 640px) {
+    .dropdown-menu {
+        top: 50px;
+        left: -16px;
+        width: 290px;
+    }
+
+    .nav {
+        display: block;
+    }
+
+    .nav .nav-item, .nav .nav-item a {
+        padding-left: 0px;
+    }
+}
+
+@media screen and (max-width:1168px) {
+    .navbar-brand {
+        margin-top: 10px;
+    }
+
+
+}
+
+
+
